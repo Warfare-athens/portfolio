@@ -13,53 +13,43 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects =[
     {
         num:"01",
-        category:"Frontend",
-        title:"project 1",
+        category:"Frontend website",
+        title:"FrontEnd website",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
-        stack:[{name:"Html"},{name:"ReactJS"},{name:"JavaScript"}],
+        stack:[{name:"Html"},{name:"css"},{name:"JavaScript"}],
         image:"/assets/work/thumb1.png",
-        live:"",
-        github:""
+        live:"https://warfare-athens.github.io/WARFARE-Motors/",
+        github:"https://github.com/Warfare-athens/WARFARE-Motors"
     },
     {
         num:"02",
-        category:"Frontend",
-        title:"project 1",
+        category:"fullstack website",
+        title:"fulllf",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
-        stack:[{name:"Html"},{name:"ReactJS"},{name:"JavaScript"}],
+        stack:[{name:"ReactJS"},{name:"NodeJS"},{name:"ExpressJS"},{name:"EJS"}],
         image:"/assets/work/thumb2.png",
-        live:"",
-        github:""
+        live:"https://www.linkedin.com/posts/athens-dubey-54b059203_nodejs-mongodb-fullstackdevelopment-activity-7201422899348402176-1Q_Q?utm_source=share&utm_medium=member_desktop",
+        github:"https://www.linkedin.com/posts/athens-dubey-54b059203_nodejs-mongodb-fullstackdevelopment-activity-7201422899348402176-1Q_Q?utm_source=share&utm_medium=member_desktop"
     },
     {
         num:"03",
-        category:"Frontend",
+        category:"Ui/Ux Design",
         title:"project 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
-        stack:[{name:"Html"},{name:"ReactJS"},{name:"JavaScript"}],
+        stack:[{name:"Figma"},{name:"Ui/Ux"}],
         image:"/assets/work/thumb3.png",
-        live:"",
+        live:"https://www.behance.net/WarfareAthens",
         github:""
     },
     {
         num:"04",
-        category:"Frontend",
+        category:"Password generator",
         title:"project 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
-        stack:[{name:"Html"},{name:"ReactJS"},{name:"JavaScript"}],
-        image:"/assets/work/thumb1.png",
-        live:"",
-        github:""
-    },
-    {
-        num:"05",
-        category:"Frontend",
-        title:"project 1",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
-        stack:[{name:"Html"},{name:"ReactJS"},{name:"JavaScript"}],
-        image:"/assets/work/thumb2.png",
-        live:"",
-        github:""
+        stack:[{name:"ReactJS"},{name:"TailwindCSS"},{name:"JavaScript"}],
+        image:"/assets/work/thumb4.jpeg",
+        live:"https://warfare-athens.github.io/Warfare_Password_Generator/",
+        github:"https://github.com/Warfare-athens/Warfare_Password_Generator"
     },
 ]
 
@@ -139,7 +129,7 @@ function Work() {
                                         <div className=" absolute bottom-0 top-0 w-full h-full bg-black/10 z-10" >
                                         </div>
                                         <div className=" relative w-full h-full ">
-                                            <Image src={project.image}  fill={true} quality={100} alt="" priority={true} className=" object-fill" ></Image>
+                                            <Image src={project.image}  fill={true} quality={100} alt="" priority={true} className=" object-cover" ></Image>
                                         </div>
                                     </div>
                                 </SwiperSlide>
