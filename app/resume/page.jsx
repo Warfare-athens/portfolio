@@ -11,39 +11,39 @@ import { motion } from "framer-motion";
 
 const about = {
     title:"About me",
-    description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, alias.",
+    description:"I am a passionate software developer skilled in front-end and back-end technologies. I excel at creating efficient, user-friendly applications, with a focus on clean, maintainable code. I thrive in collaborative environments and continuously stay updated with the latest industry trends and technologies.",
     info:[
         {
-            fieldName:"srgr",
-            fieldValue:"retwer"
+            fieldName:"name",
+            fieldValue:"Athens Dubey"
         },
         {
-            fieldName:"wert",
-            fieldValue:"werter"
+            fieldName:"DOB",
+            fieldValue:"24 Nov, 2004"
         },
         {
-            fieldName:"srgr",
-            fieldValue:"retwer"
+            fieldName:"something",
+            fieldValue:"something"
         },
         {
-            fieldName:"wert",
-            fieldValue:"werter"
+            fieldName:"something",
+            fieldValue:"something"
         },
         {
-            fieldName:"srgr",
-            fieldValue:"retwer"
+            fieldName:"something",
+            fieldValue:"something"
         },
         {
-            fieldName:"wert",
-            fieldValue:"werter"
+            fieldName:"something",
+            fieldValue:"something"
         },
         {
-            fieldName:"srgr",
-            fieldValue:"retwer"
+            fieldName:"something",
+            fieldValue:"something"
         },
         {
-            fieldName:"wert",
-            fieldValue:"werter"
+            fieldName:"something",
+            fieldValue:"something"
         },
         
         
@@ -53,22 +53,12 @@ const about = {
 const experience = {
     icon:"/assets/resume/badge.svg",
     title:"Experience",
-    description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, alias.",
+    description:"",
     items:[
         {
-            company:"samsung",
-            position:"software developer 1",
-            duration:"2022-2023"
-        },
-        {
-            company:"samsung",
-            position:"software developer 1",
-            duration:"2022-2023"
-        },
-        {
-            company:"samsung",
-            position:"software developer 1",
-            duration:"2022-2023"
+            company:"not now",
+            position:"software developer ",
+            duration:"20XX - 20XX"
         },
     ]
 }
@@ -76,7 +66,7 @@ const experience = {
 const education = {
     icon:"/assets/resume/cap.svg",
     title:"Education",
-    description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, alias.",
+    description:"Here is my schooling and graduation history.",
     items:[
         {
             istitution:"ShriRam Intitite of Information Technology",
@@ -94,7 +84,7 @@ const education = {
 
 const skills = {
     title:"Skills",
-    description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, alias.",
+    description:"I'm proficient is these skills.",
     skillList:[
         {
             icon:<FaHtml5/>,
