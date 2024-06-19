@@ -2,6 +2,8 @@
 
 import { FaHtml5 ,FaPython, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiNextdotjs} from "react-icons/si";
+import { GiProcessor } from "react-icons/gi";
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; 
 import { Tooltip, TooltipProvider, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -22,31 +24,21 @@ const about = {
             fieldValue:"24 Nov, 2004"
         },
         {
-            fieldName:"something",
-            fieldValue:"something"
+            fieldName:"Gender",
+            fieldValue:"Male"
         },
         {
             fieldName:"something",
             fieldValue:"something"
         },
         {
-            fieldName:"something",
-            fieldValue:"something"
+            fieldName:"Language",
+            fieldValue:"English, Hindi"
         },
         {
             fieldName:"something",
             fieldValue:"something"
         },
-        {
-            fieldName:"something",
-            fieldValue:"something"
-        },
-        {
-            fieldName:"something",
-            fieldValue:"something"
-        },
-        
-        
     ]
 }
 
@@ -88,7 +80,7 @@ const skills = {
     skillList:[
         {
             icon:<FaHtml5/>,
-            name:"Html",
+            name:"Html / Css",
         },
         {
             icon:<FaJs/>,
@@ -103,12 +95,12 @@ const skills = {
             name:"ReactJS",
         },
         {
-            icon:<SiNextdotjs/>,
-            name:"Next.js",
-        },
-        {
             icon:<FaPython/>,
             name:"Python",
+        },
+        {
+            icon:<GiProcessor/>,
+            name:"DSA",
         },
         {
             icon:<SiMongodb/>,
@@ -175,12 +167,13 @@ function page() {
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
 
-                                                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group ">
+                                                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group ">
                                                         <div className="text-6xl group-hover:text-accent translate-all duration-300 ">{skill.icon}</div>
+                                                        <div className=" text-base mt-3 group-hover:text-accent translate-all duration-300 ">{skill.name}</div>
                                                     </TooltipTrigger>
-                                                    <TooltipContent>
+                                                    {/* <TooltipContent>
                                                         <p>{skill.name}</p>
-                                                    </TooltipContent>
+                                                    </TooltipContent> */}
                                                 </Tooltip>
                                             </TooltipProvider>         
                                         </li>
