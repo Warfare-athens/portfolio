@@ -12,7 +12,47 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects =[
     {
-        num:"01",
+        num:"1",
+        category:"School Management System",
+        title:"School Management System",
+        description:"fullstack project using latest technologies with modern UI/UX , highly Scalable.",
+        stack:[{name:"Next.js"},{name:"TypeScript"},{name:"PostgresDB"},{name:"Backend"}],
+        image:"/assets/work/school_management.png",
+        live:"https://school-management-mocha-delta.vercel.app/",
+        github:"https://github.com/Warfare-athens/school-management"
+    },
+    {
+        num:"2",
+        category:"HUME E-commerce",
+        title:"HUME E-commerce",
+        description:"fullstack project using latest technologies with modern UI/UX , highly Scalable.",
+        stack:[{name:"MongoDB"},{name:"ReactJS"},{name:"ExpressJS"},{name:"NodeJS"}],
+        image:"/assets/work/hume.png",
+        live:"https://e-commerce-1-2gxs.onrender.com/",
+        github:"https://github.com/Warfare-athens/e-commerce"
+    },
+    {
+        num:"3",
+        category:"Twitter / X",
+        title:"Twitter , X",
+        description:"fullstack project using latest technologies with modern UI/UX , highly Scalable.",
+        stack:[{name:"MongoDB"},{name:"ReactJS"},{name:"ExpressJS"},{name:"NodeJS"}],
+        image:"/assets/work/x2.png",
+        live:"https://x-6yzs.onrender.com/",
+        github:"https://github.com/Warfare-athens/X"
+    },
+    {
+        num:"4",
+        category:"Password generator",
+        title:"project 1",
+        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
+        stack:[{name:"ReactJS"},{name:"TailwindCSS"},{name:"JavaScript"}],
+        image:"/assets/work/thumb4.png",
+        live:"https://warfare-athens.github.io/Warfare_Password_Generator/",
+        github:"https://github.com/Warfare-athens/Warfare_Password_Generator"
+    },
+    {
+        num:"5",
         category:"Frontend website",
         title:"FrontEnd website",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
@@ -22,7 +62,7 @@ const projects =[
         github:"https://github.com/Warfare-athens/WARFARE-Motors"
     },
     {
-        num:"02",
+        num:"6",
         category:"fullstack website",
         title:"fulllf",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
@@ -32,7 +72,7 @@ const projects =[
         github:"https://www.linkedin.com/posts/athens-dubey-54b059203_nodejs-mongodb-fullstackdevelopment-activity-7201422899348402176-1Q_Q?utm_source=share&utm_medium=member_desktop"
     },
     {
-        num:"03",
+        num:"7",
         category:"Ui/Ux Design",
         title:"project 1",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
@@ -40,16 +80,6 @@ const projects =[
         image:"/assets/work/thumb3.png",
         live:"https://www.behance.net/WarfareAthens",
         github:""
-    },
-    {
-        num:"04",
-        category:"Password generator",
-        title:"project 1",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, molestias",
-        stack:[{name:"ReactJS"},{name:"TailwindCSS"},{name:"JavaScript"}],
-        image:"/assets/work/thumb4.jpeg",
-        live:"https://warfare-athens.github.io/Warfare_Password_Generator/",
-        github:"https://github.com/Warfare-athens/Warfare_Password_Generator"
     },
 ]
 
@@ -125,11 +155,10 @@ function Work() {
                         {projects.map((project,index)=>{
                             return(
                                 <SwiperSlide key={index} className="w-full" >
-                                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 " >
-                                        <div className=" absolute bottom-0 top-0 w-full h-full bg-black/10 z-10" >
-                                        </div>
+                                    <div className=" h-[250px] sm:h-[460px] relative group flex justify-center items-center bg-pink-50/20 " >
+
                                         <div className=" relative w-full h-full ">
-                                            <Image src={project.image}  fill={true} quality={100} alt="" priority={true} className=" object-cover" ></Image>
+                                            <Image src={project.image}  fill={true} quality={100} alt="" priority={true} className=" object-contain" ></Image>
                                         </div>
                                     </div>
                                 </SwiperSlide>
