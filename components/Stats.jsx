@@ -11,11 +11,11 @@ const statsLinks = [
         text: "Projects"
     },
     {
-        num: 8,
+        num: 12,
         text: "Technology mastered"
     },
     {
-        num: 22,
+        num: 150,
         text: "Code Commit"
     },
 ]
