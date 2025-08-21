@@ -6,28 +6,29 @@ import { motion } from "framer-motion"
 const servieces = [
   {
     num:"01",
+    title:"AI ML",
+    desc:"Ai Ml enthusiast with learning new technologies in Artificial Intelligence",
+    href:"https://www.behance.net/WarfareAthens"
+  },
+  {
+    num:"02",
     title:"FrontEnd Development",
     desc:"Morder Ui/Ux and creative design using frontend technologies.",
     href:"https://github.com/Warfare-athens"
   },
   {
-    num:"02",
+    num:"03",
     title:"Fullstack Development",
     desc:"Full stack Web development with various frontend and backend technologies.",
     href:"https://github.com/Warfare-athens"
   },
   {
-    num:"03",
+    num:"04",
     title:"Programming",
     desc:"Data Structure & Algorithms with complex problem solving.",
     href:"https://leetcode.com/u/athensdubey/"
   },
-  {
-    num:"04",
-    title:"Ui/Ux",
-    desc:"creative and morden web / mobile design.",
-    href:"https://www.behance.net/WarfareAthens"
-  },
+  
 ]
 
 
