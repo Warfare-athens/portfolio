@@ -16,6 +16,7 @@ function Photo() {
                 priority 
                 quality={100} 
                 fill 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="Viking portrait" 
                 className="object-cover scale-110 hover:scale-125 transition-transform duration-500" 
             />

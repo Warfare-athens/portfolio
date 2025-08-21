@@ -17,6 +17,7 @@ export default function Home() {
           <div className=" text-center xl:text-left order-2 xl:order-none"> 
             <h1 className=" h1 ">Hello I'm<br /> <span className=" text-accent">Athens Dubey</span></h1>
             <span className=" text-xl ">Software Dev | Gen AI Developer</span>
+            <p className=" text-sm hidden md:block md:mt-8 mb-5 font-thin text-white/60">I'm a passionate software developer with a focus on building innovative solutions using cutting-edge technologies.</p>
 
             <div className=" flex flex-col mt-5 items-center  gap-4 xl:flex-row">
               <Link href="https://drive.google.com/drive/folders/1XyLRj3taX0dUeRAvWMlJgRCngWA6MeTj"  className=" bg-accent  text-black font-medium px-5 py-2 uppercasea rounded-lg flex items-center gap-2 "  >

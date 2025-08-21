@@ -86,7 +86,7 @@ function Projects() {
           {projects.map((project, index)=>{
             return(
 
-              <div key={index} className="flex-1 flex flex-col  justify-center border-[1px] border-neutral-500 p-6 rounded-3xl  gap-3 md:gap-5 group" >
+              <div key={index} className="flex-1 flex flex-col  justify-center border-[1px] border-neutral-500 p-4 md:p-6 rounded-3xl  gap-3 md:gap-5 group" >
                 <div className=" w-full flex justify-between items-center ">
 
                 <div className=" text-4xl  font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500 ">
@@ -129,7 +129,7 @@ function Projects() {
                 <div className=" flex items-center gap-2 sm:gap-4 flex-wrap">
                     {project.stack.map((skill, index) => {
                         return(
-                    <div className="  p-1 h-7  border-[1px]  border-neutral-500 rounded-md flex justify-evenly items-center    ">
+                    <div key={index} className="  p-1 h-7  border-[1px]  border-neutral-500 rounded-md flex justify-evenly items-center    ">
                         <div className=" text-xs sm:text-sm  text-nowrap font-extralight  text-accent translate-all duration-300 ">{skill.name}</div>
                     </div>
                         )
