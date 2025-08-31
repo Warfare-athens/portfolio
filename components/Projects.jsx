@@ -76,10 +76,19 @@ function Projects() {
   return (
 
     <section className=" min-h[80vh] mt flex flex-col justify-center py-12 xl:py-0 " >
-      <div className=" mx:auto mt-4 md:mt-16 container">
-        <div className=" flex justify-center text-5xl my-10 font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500 ">
-            PROJECTS
-        </div>
+      <div className=" mx:auto mt-4 md:mt-28 container">
+        <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-6"
+                >
+                    <h2 className="text-6xl font-extrabold text-transparent bg-gradient-to-r from-accent via-white to-accent bg-clip-text mb-2">
+                        PROJECTS
+                    </h2>
+                    <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto rounded-full" />
+                    
+                </motion.div>   
         <motion.div initial={{opacity:1}} className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[20px]" 
         animate={{ opacity:1 , transition:{ delay:"2.4" , duration:"0.4" , ease:"easeIn" }}} >
 

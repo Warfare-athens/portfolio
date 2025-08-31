@@ -4,14 +4,16 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import Link from "next/link";
-import Projects from "@/components/ui/Projects";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Coursework from "@/components/Coursework";
+import Certificates from "@/components/Certificates";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <section className=" h-full ">
-      <div className=" h-full container mx-auto">
+      <div className=" h-full container mt-8 mx-auto">
         <div className=" flex flex-col items-center justify-evenly xl:flex-row pt-8 xl:pb-24 ">
 
           <div className=" text-center xl:text-left order-2 xl:order-none"> 
@@ -38,6 +40,8 @@ export default function Home() {
 
       <Projects />
       <Skills/>
+      <Certificates/>
+      <About />
     </section>
   );
 }
